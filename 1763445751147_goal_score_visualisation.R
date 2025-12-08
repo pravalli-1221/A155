@@ -108,7 +108,7 @@ library(dplyr)
 library(tidyr)
 
 # Load data
-df <- read_csv("C:/Users/OneDrive/Desktop\A155_women_goalscoreswomens_goalscorers.csv")
+df <- read_csv("goalscorers.csv")
 match_goals <- df %>%
   # Mark each goal as Home or Away
   mutate(goal_for = ifelse(team == home_team, "Home",
